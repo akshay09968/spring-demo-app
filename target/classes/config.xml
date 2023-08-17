@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="empObj" class="com.beans.Employee">
+		<property name="empno" value="1001"/>
+		<property name="ename" value="Akshay"/>
+		<property name="job" value="SE"/>
+		<property name="salary" value="200000.00"/>
+	</bean>
+
+</beans>
+
+<!-- config.xml is the IOC container which is injected as empObj in EmpApp class
+
+	<beans> tags holds all the bean object, each <bean> tag specifies an object of the class
+	
+	<bean id="classObj" class="java classname with packages">
+ -->
